@@ -69,6 +69,7 @@ const Dashboard = () => {
       try {
         const response = await fetch(`https://open-api.tiktokglobalshop.com/api/orders/search?app_key=${appKey}&access_token=${accessToken}&sign=${sign}&timestamp=${timestamp}`, {
           method: 'POST',
+          mode:'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
